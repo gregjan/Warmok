@@ -1,7 +1,7 @@
 Warmok Tool Kit
 ===============
 
-A multi-player online strategy game service based on the Eclipse Modelling Framework (EMF)
+A multi-player turn-based strategy game kit based on the Eclipse Modelling Framework (EMF)
 
 The Warmok Tool Kit (WTK) is a game hosting service inspired by turn-based strategy games developed and played by the Meekmok Collective. It is named for the Warmok, a specific rule set that we played with the utmost enthusiasm.
 
