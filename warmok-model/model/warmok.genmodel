@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Warmok Model/src/main/java"
+    editDirectory="/Warmok Model.edit/src/main/java" editorDirectory="/Warmok Model.editor/src/main/java"
+    modelPluginID="Warmok_Model" modelName="Warmok" testsDirectory="/Warmok Model.tests/src/main/java"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../Games%20Model/model/games.genmodel#//Games">
+  <foreignModel>warmok.ecore</foreignModel>
+  <genPackages prefix="Warmok" basePackage="org.meekmok" disposableProviderFactory="true"
+      ecorePackage="warmok.ecore#/">
+    <genClasses ecoreClass="warmok.ecore#//WarmokGame">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//WarmokGame/world"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//WarmokGame/nations"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//Round"/>
+    <genClasses ecoreClass="warmok.ecore#//Orders">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Orders/nation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference warmok.ecore#//Orders/moves"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Orders/completed"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="warmok.ecore#//Order"/>
+    <genClasses ecoreClass="warmok.ecore#//Buy">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Buy/destination"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Buy/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Buy/quantity"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//Move">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Move/destination"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Move/units"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//World">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//World/image"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//World/territories"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//World/dimensions"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//Nation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Nation/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Nation/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Nation/treasury"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Nation/player"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Nation/leader"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Nation/startTerritory"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Nation/territories"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Nation/units"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//Territory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Territory/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Territory/center"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Territory/adjacentTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//Territory/habitable"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//UnitType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//UnitType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//UnitType/movement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//UnitType/fight"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//Unit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Unit/nation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference warmok.ecore#//Unit/type"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//NationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//NationType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="warmok.ecore#//GeoPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//GeoPoint/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute warmok.ecore#//GeoPoint/y"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

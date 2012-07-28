@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Games Model/src/main/java"
+    editDirectory="/Games Model.edit/src/main/java" modelPluginID="Games_Model" modelName="Games"
+    testsDirectory="/Games Model.tests/src/main/java" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>games.ecore</foreignModel>
+  <genPackages prefix="Games" basePackage="org.meekmok" disposableProviderFactory="true"
+      ecorePackage="games.ecore#/">
+    <genClasses ecoreClass="games.ecore#//Profile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute games.ecore#//Profile/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute games.ecore#//Profile/openid"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference games.ecore#//Profile/players"/>
+    </genClasses>
+    <genClasses ecoreClass="games.ecore#//Game">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference games.ecore#//Game/players"/>
+    </genClasses>
+    <genClasses ecoreClass="games.ecore#//Player">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference games.ecore#//Player/profile"/>
+    </genClasses>
+    <genClasses ecoreClass="games.ecore#//Profiles">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference games.ecore#//Profiles/profiles"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
