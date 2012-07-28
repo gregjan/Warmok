@@ -15,3 +15,4 @@ References
 * Eclipse Modelling Framework (EMF) http://www.eclipse.org/modeling/emf/
 * Object Constraint Language (OCL) http://www.omg.org/spec/OCL/ISO/19507/PDF/
 * Warmok! Revised Rules March 2004 http://www.meekmok.com/games/computer/warmok/archives/001049.html
+* Meekmok Collective http://meekmok.com/
