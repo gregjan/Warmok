@@ -11,19 +11,21 @@ import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 
 /**
- * The <b>{@link ModelFactory}</b> for the types of this model: Games.
- * It contains code to create instances {@link ModelObject} wrappers and instances for EClasses and convert objects back and forth from their String (XML) representation.
- * <!-- begin-user-doc -->
- * <!-- end-user-doc -->
+ * The <b>{@link ModelFactory}</b> for the types of this model: Games. It
+ * contains code to create instances {@link ModelObject} wrappers and instances
+ * for EClasses and convert objects back and forth from their String (XML)
+ * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+ * 
  * @generated
  */
 public class GamesModelFactory implements ModelFactory {
 
 	/**
-	 * Creates an instance for an {@link EClass}
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param eClass creates a Object instance for this EClass
+	 * Creates an instance for an {@link EClass} <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param eClass
+	 *            creates a Object instance for this EClass
 	 * @return an object representing the eClass
 	 * @generated
 	 */
@@ -43,10 +45,9 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * Wraps an object in a {@link ModelObject}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 *
+	 * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param eClass
 	 *            the EClass of the object
 	 * @param adaptee
@@ -82,7 +83,7 @@ public class GamesModelFactory implements ModelFactory {
 	 * Creates a feature map entry instance for a certain EStructuralFeature.
 	 * 
 	 * @param eStructuralFeature
-	 *          the feature map feature
+	 *            the feature map feature
 	 * @return the pojo feature map entry
 	 * @generated
 	 */
@@ -92,13 +93,14 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map
-	 * entry is null then a new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}.
+	 * If the feature map entry is null then a new one is created and <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @param eStructuralFeature
-	 *          the feature map feature of the object
+	 *            the feature map feature of the object
 	 * @param adaptee
-	 *          the pojo feature map entry being wrapped/adapted
+	 *            the pojo feature map entry being wrapped/adapted
 	 * @return the wrapper {@link ModelFeatureMapEntry}
 	 * @generated
 	 */
@@ -109,8 +111,8 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return an instance of the model object representing the EClass Profile
 	 * @generated
 	 */
@@ -119,8 +121,8 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return an instance of the model object representing the EClass Player
 	 * @generated
 	 */
@@ -129,8 +131,8 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return an instance of the model object representing the EClass Game
 	 * @generated
 	 */
@@ -139,8 +141,8 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return an instance of the model object representing the EClass Profiles
 	 * @generated
 	 */
@@ -149,11 +151,14 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * Converts an instance of an {@link EDataType} to a String.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param eDataType the {@link EDataType} defining the type
-	 * @param value the object to convert, if the value is null then null is returned.
+	 * Converts an instance of an {@link EDataType} to a String. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param eDataType
+	 *            the {@link EDataType} defining the type
+	 * @param value
+	 *            the object to convert, if the value is null then null is
+	 *            returned.
 	 * @generated
 	 */
 	public Object createFromString(EDataType eDataType, String value) {
@@ -164,11 +169,13 @@ public class GamesModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * Converts an instance of an {@link EDataType} to a String.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param eDataType the {@link EDataType} defining the type
-	 * @param value the object to convert, if value == null then null is returned
+	 * Converts an instance of an {@link EDataType} to a String. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param eDataType
+	 *            the {@link EDataType} defining the type
+	 * @param value
+	 *            the object to convert, if value == null then null is returned
 	 * @generated
 	 */
 	public String convertToString(EDataType eDataType, Object value) {
@@ -178,11 +185,11 @@ public class GamesModelFactory implements ModelFactory {
 				+ "' is not defined in this EPackage.");
 	}
 
-	/** 
-	 * The adapter/wrapper for the EClass '<em><b>Profile</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated 
+	/**
+	 * The adapter/wrapper for the EClass '<em><b>Profile</b></em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
 	 */
 	public static class ProfileModelObject<E extends Profile> extends
 			AbstractModelObject<E> {
@@ -263,18 +270,18 @@ public class GamesModelFactory implements ModelFactory {
 			switch (featureID) {
 
 			case GamesModelPackage.PROFILE_PLAYERS_FEATURE_ID:
-				getTarget().getPlayers().remove((Player) value);
+				getTarget().getPlayers().remove(value);
 				return;
 			}
-			super.eAddTo(eStructuralFeature, value);
+			super.eRemoveFrom(eStructuralFeature, value);
 		}
 	}
 
-	/** 
-	 * The adapter/wrapper for the EClass '<em><b>Player</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated 
+	/**
+	 * The adapter/wrapper for the EClass '<em><b>Player</b></em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
 	 */
 	public static class PlayerModelObject<E extends Player> extends
 			AbstractModelObject<E> {
@@ -341,15 +348,15 @@ public class GamesModelFactory implements ModelFactory {
 			switch (featureID) {
 
 			}
-			super.eAddTo(eStructuralFeature, value);
+			super.eRemoveFrom(eStructuralFeature, value);
 		}
 	}
 
-	/** 
-	 * The adapter/wrapper for the EClass '<em><b>Game</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated 
+	/**
+	 * The adapter/wrapper for the EClass '<em><b>Game</b></em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
 	 */
 	public static class GameModelObject<E extends Game> extends
 			AbstractModelObject<E> {
@@ -420,18 +427,18 @@ public class GamesModelFactory implements ModelFactory {
 			switch (featureID) {
 
 			case GamesModelPackage.GAME_PLAYERS_FEATURE_ID:
-				getTarget().getPlayers().remove((Player) value);
+				getTarget().getPlayers().remove(value);
 				return;
 			}
-			super.eAddTo(eStructuralFeature, value);
+			super.eRemoveFrom(eStructuralFeature, value);
 		}
 	}
 
-	/** 
-	 * The adapter/wrapper for the EClass '<em><b>Profiles</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated 
+	/**
+	 * The adapter/wrapper for the EClass '<em><b>Profiles</b></em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
 	 */
 	public static class ProfilesModelObject<E extends Profiles> extends
 			AbstractModelObject<E> {
@@ -502,10 +509,10 @@ public class GamesModelFactory implements ModelFactory {
 			switch (featureID) {
 
 			case GamesModelPackage.PROFILES_PROFILES_FEATURE_ID:
-				getTarget().getProfiles().remove((Profile) value);
+				getTarget().getProfiles().remove(value);
 				return;
 			}
-			super.eAddTo(eStructuralFeature, value);
+			super.eRemoveFrom(eStructuralFeature, value);
 		}
 	}
 

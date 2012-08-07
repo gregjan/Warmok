@@ -12,119 +12,120 @@ import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
- * The <b>Package</b> for the model '<em><b>Games</b></em>'.
- * It contains initialization code and access to the Factory to instantiate types of this package.
+ * The <b>Package</b> for the model '<em><b>Games</b></em>'. It contains
+ * initialization code and access to the Factory to instantiate types of this
+ * package.
  * 
- * <!-- begin-user-doc -->
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> <!-- end-user-doc -->
+ * 
  * @generated
  */
 public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Is set when the package has been initialized.
+	 * 
 	 * @generated
 	 */
 	private static boolean isInitialized = false;
 
 	/**
-	 * The package namespace URI.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The package namespace URI. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final String NS_URI = "http://www.meekmok.com/Games";
 
 	/**
-	 * The {@link ModelFactory} for this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The {@link ModelFactory} for this package. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final GamesModelFactory MODELFACTORY = new GamesModelFactory();
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILE_CLASSIFIER_ID = 0;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILE_NAME_FEATURE_ID = 0;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILE_OPENID_FEATURE_ID = 1;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILE_PLAYERS_FEATURE_ID = 2;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PLAYER_CLASSIFIER_ID = 2;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PLAYER_PROFILE_FEATURE_ID = 0;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int GAME_CLASSIFIER_ID = 1;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int GAME_PLAYERS_FEATURE_ID = 0;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILES_CLASSIFIER_ID = 3;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final int PROFILES_PROFILES_FEATURE_ID = 0;
 
 	/**
-	 * The static member with the instance of this {@link ModelPackage}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The static member with the instance of this {@link ModelPackage}. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final GamesModelPackage INSTANCE = initialize();
 
 	/**
-	 * Initializes this {@link ModelPackage}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static GamesModelPackage initialize() {
@@ -138,11 +139,15 @@ public class GamesModelPackage extends ModelPackage {
 
 		ModelResolver.getInstance().registerModelPackage(modelPackage);
 
-		isInitialized = true;
-
-		// read the model from the ecore file, the EPackage is registered in the EPackage.Registry
+		// read the model from the ecore file, the EPackage is registered in the
+		// EPackage.Registry
 		// see the ModelResolver getEPackageRegistry method
 		ModelUtils.readEPackagesFromFile(modelPackage);
+
+		isInitialized = true;
+
+		// force the initialization of the EFactory proxy
+		modelPackage.getEPackage();
 
 		// register the relation between a Class and its EClassifier
 		ModelResolver.getInstance().registerClassModelMapping(Profile.class,
@@ -159,9 +164,8 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link ModelFactory} of this ModelPackage.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the {@link ModelFactory} of this ModelPackage. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the {@link GamesModelFactory} instance.
 	 * @generated
@@ -171,12 +175,11 @@ public class GamesModelPackage extends ModelPackage {
 		return MODELFACTORY;
 	}
 
-	/** 
-	 * Returns the nsUri of the {@link EPackage} managed by this Package instance.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	/**
+	 * Returns the nsUri of the {@link EPackage} managed by this Package
+	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @return the nsUri of the EPackage 
+	 * @return the nsUri of the EPackage
 	 * @generated
 	 */
 	@Override
@@ -184,12 +187,12 @@ public class GamesModelPackage extends ModelPackage {
 		return NS_URI;
 	}
 
-	/** 
-	 * Returns the name of the ecore file containing the ecore model of the {@link EPackage} managed here.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	/**
+	 * Returns the name of the ecore file containing the ecore model of the
+	 * {@link EPackage} managed here. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
 	 * 
-	 * @return the name of the ecore file 
+	 * @return the name of the ecore file
 	 * @generated
 	 */
 	@Override
@@ -198,10 +201,10 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link EClass} '<em><b>Profile</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EClass} '<em><b>Profile</b></em>' 
+	 * Returns the {@link EClass} '<em><b>Profile</b></em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EClass} '<em><b>Profile</b></em>'
 	 * @generated
 	 */
 	public EClass getProfileEClass() {
@@ -211,9 +214,10 @@ public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Returns the {@link EStructuralFeature} '<em><b>Profile.name</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Profile.name</b></em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Profile.name</b></em>'.
 	 * @generated
 	 */
 	public EAttribute getProfile_Name() {
@@ -223,9 +227,10 @@ public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Returns the {@link EStructuralFeature} '<em><b>Profile.openid</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Profile.openid</b></em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Profile.openid</b></em>'.
 	 * @generated
 	 */
 	public EAttribute getProfile_Openid() {
@@ -235,9 +240,10 @@ public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Returns the {@link EStructuralFeature} '<em><b>Profile.players</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Profile.players</b></em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Profile.players</b></em>'.
 	 * @generated
 	 */
 	public EReference getProfile_Players() {
@@ -246,10 +252,10 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link EClass} '<em><b>Player</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EClass} '<em><b>Player</b></em>' 
+	 * Returns the {@link EClass} '<em><b>Player</b></em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EClass} '<em><b>Player</b></em>'
 	 * @generated
 	 */
 	public EClass getPlayerEClass() {
@@ -259,9 +265,10 @@ public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Returns the {@link EStructuralFeature} '<em><b>Player.profile</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Player.profile</b></em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Player.profile</b></em>'.
 	 * @generated
 	 */
 	public EReference getPlayer_Profile() {
@@ -270,10 +277,10 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link EClass} '<em><b>Game</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EClass} '<em><b>Game</b></em>' 
+	 * Returns the {@link EClass} '<em><b>Game</b></em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EClass} '<em><b>Game</b></em>'
 	 * @generated
 	 */
 	public EClass getGameEClass() {
@@ -282,9 +289,10 @@ public class GamesModelPackage extends ModelPackage {
 
 	/**
 	 * Returns the {@link EStructuralFeature} '<em><b>Game.players</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Game.players</b></em>'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Game.players</b></em>'.
 	 * @generated
 	 */
 	public EReference getGame_Players() {
@@ -293,10 +301,10 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link EClass} '<em><b>Profiles</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EClass} '<em><b>Profiles</b></em>' 
+	 * Returns the {@link EClass} '<em><b>Profiles</b></em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EClass} '<em><b>Profiles</b></em>'
 	 * @generated
 	 */
 	public EClass getProfilesEClass() {
@@ -305,10 +313,11 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * Returns the {@link EStructuralFeature} '<em><b>Profiles.profiles</b></em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return an instance of the {@link EStructuralFeature}: '<em><b>Profiles.profiles</b></em>'.
+	 * Returns the {@link EStructuralFeature} '<em><b>Profiles.profiles</b></em>
+	 * '. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return an instance of the {@link EStructuralFeature}: '
+	 *         <em><b>Profiles.profiles</b></em>'.
 	 * @generated
 	 */
 	public EReference getProfiles_Profiles() {
@@ -317,8 +326,8 @@ public class GamesModelPackage extends ModelPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param eClassifier
 	 *            the {@link EClassifier}
 	 * @return the class implementing a specific {@link EClass}.

@@ -3,26 +3,26 @@ package com.meekmok.games;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 
- * A representation of the model object '<em><b>Profiles</b></em>'.
- * <!-- begin-user-doc -->
- * <!-- end-user-doc -->
- * @generated 
+/**
+ * A representation of the model object '<em><b>Profiles</b></em>'. <!--
+ * begin-user-doc --> <!-- end-user-doc -->
+ * 
+ * @generated
  */
 public class Profiles {
 
-	/** 
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated 
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
 	 */
 	private List<Profile> profiles = new ArrayList<Profile>();
 
 	/**
 	 * Returns the value of '<em><b>profiles</b></em>' feature.
-	 *
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * 
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @return the value of '<em><b>profiles</b></em>' feature
 	 * @generated
 	 */
@@ -32,20 +32,18 @@ public class Profiles {
 
 	/**
 	 * Adds to the <em>profiles</em> feature.
+	 * 
 	 * @generated
 	 */
 	public void addToProfiles(Profile profilesValue) {
-
 		if (!profiles.contains(profilesValue)) {
-
 			profiles.add(profilesValue);
-
 		}
-
 	}
 
-	/**			
+	/**
 	 * Removes from the <em>profiles</em> feature.
+	 * 
 	 * @generated
 	 */
 	public void removeFromProfiles(Profile profilesValue) {
@@ -54,22 +52,25 @@ public class Profiles {
 		}
 	}
 
-	/**			
+	/**
 	 * Clears the <em>profiles</em> feature.
+	 * 
 	 * @generated
 	 */
 	public void clearProfiles() {
-		for (Profile profilesElement : profiles) {
-			removeFromProfiles(profilesElement);
+		while (!profiles.isEmpty()) {
+			removeFromProfiles(profiles.iterator().next());
 		}
 	}
 
 	/**
 	 * Sets the '{@link Profiles#getProfiles() <em>profiles</em>}' feature.
-	 *
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param the new value of the '{@link Profiles#getProfiles() profiles}' feature.
+	 * 
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param the
+	 *            new value of the '{@link Profiles#getProfiles() profiles}'
+	 *            feature.
 	 * @generated
 	 */
 	public void setProfiles(List<Profile> newProfiles) {
@@ -77,9 +78,9 @@ public class Profiles {
 	}
 
 	/**
-	 * A toString method which prints the values of all EAttributes of this instance.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A toString method which prints the values of all EAttributes of this
+	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
